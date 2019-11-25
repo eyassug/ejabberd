@@ -76,7 +76,7 @@ check_password(User, AuthzId, Server, Token) ->
             end
     end.
 
-user_exists(_User, _Host) -> {nocache, false}.
+user_exists(_User, _Host) -> {nocache, true}.
 
 use_cache(_) ->
     false.
